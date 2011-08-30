@@ -1,0 +1,30 @@
+= CrunchBase Library
+
+This library is meant to facilitate interacting with the CrunchBase API
+
+== Download
+
+Currently this library is available with git from:
+
+  git://github.com/lgomez/crunchbase.git
+
+== Installation
+
+=== From Git
+
+You can check out the latest source from git:
+
+  > git pull git://github.com/lgomez/crunchbase.git
+
+=== As a Rails plugin
+
+  > ./script/plugin install git://github.com/lgomez/crunchbase.git
+
+== Sample Usage
+  > crunchbase = CrunchBase::Base.new
+  > crunchbase.list("company") #=> list of entities in the company namespace
+  > crunchbase.show("facebook", "company") #=> returns facebook from the company namespace
+  > crunchbase.search("facebook") #=> search for facebook across all namespaces
+
+== Contributing
+
